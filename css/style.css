@@ -27,7 +27,10 @@ body{
 }
 
 .site-url {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+.site-url:hover {
+  color:#ffdd00 !important;
 }
 
 /* hero section css */
@@ -128,6 +131,23 @@ font-size: 1.9rem;
   color:#151643;
   font-weight:400;
 }
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.5s ease-out forwards;
+  animation-delay: 0.3s; 
+}
+
+/* Animation keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* footer css */
 footer {
