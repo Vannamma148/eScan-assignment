@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.navbar {
+  background-image: linear-gradient(250deg, #3e71de 20% 4%, #fbfbfb 4%);
+  
+}
+
+.navbar-brand {
+  background-color: #363435;
+  border-radius: 9px;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.site-url {
+  font-size: 1.5rem;
+}
+
+/* hero section css */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero-text h1{
+  font-size:3.6rem;
+  font-weight: bolder;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  right: 11%; 
+  transform: translateY(-50%);
+  text-align: right;
+  color: #fff; 
+  max-width: 70%;
+  z-index: 4;
+}
+.hero-text span{
+  color:#ffdd00
+}
+.main-slider-shape-1 {
+  position: absolute;
+  top: -12px;
+  right: 5px;
+  width: 700px;
+  height: 900px;
+  background: rgb(0,51,102);
+  background: linear-gradient(90deg, rgba(21, 10, 226, 0.79) 0%, rgba(9, 9, 121, 0.77) 85%, #0f06ff 100%);
+    mix-blend-mode: soft-light;
+  opacity: 0.9;
+  transform: rotate(45deg) translateY(-200px);
+  border-radius: 30px;
+  z-index: 2;
+}
+
+.main-slider-shape-1 {
+    opacity: 1;
+    transform: rotate(16deg) translateY(0px);
+    transition: all 1000ms ease;
+    transition-delay: 1500ms;
+}
+.main-slider-shape-2 {
+  position: absolute;
+    top: -157px;
+    right: -206px;
+    width: 431px;
+    height: 323px;
+    background: linear-gradient(90deg, rgba(21, 10, 226, 0.79) 0%, rgba(9, 9, 121, 0.77) 85%, #0f06ff 100%);
+    mix-blend-mode: soft-light;
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    z-index: 1;
+  }
+
+.main-slider-shape-2 {
+  opacity: 1;
+  transform: rotate(156deg) translateY(0px);
+  transition: all 1000ms ease;
+}
+
+.main-slider-shape-3 {
+position: absolute;
+    top: 272px;
+    right: -382px;
+    width: 500px;
+    height: 360px;
+    background: #020024;
+    background: linear-gradient(90deg, rgb(236 236 236 / 98%) 0%, rgb(255 255 255 / 87%) 35%, rgb(255 255 255 / 81%) 100%);
+    mix-blend-mode: soft-light;
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    z-index: 1;
+}
+
+.main-slider-shape-3 {
+  opacity: 1;
+  transform: rotate(28deg) translateY(0px);
+  transition: all 1000ms ease;
+  transition-delay: 2000ms;
+}
+
+/* about css */
+.icon i{
+font-size: 1.9rem;
+    border-radius: 50%;
+    padding: 11px 16px;
+    color:white;
+    background-color:#0099cc;
+}
+.title{
+  color:#313247;
+}
+.text-content{
+  color:#151643;
+  font-weight:400;
+}
+
+/* footer css */
+footer {
+  position: relative;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #082567, #005599);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #082567, #0099cc);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #2685e4b4, #0099cc);
+  clip-path: polygon(31% 6%, 98% 100%, 86% 100%, 13% 100%);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+footer p,
+footer span {
+  position: relative;
+  z-index: 1;
+}
+
+footer span {
+  color: #ffdd00;
+}
+
+/* css mobile */
+@media only screen and (max-width: 767px) {
+  
+  .main-slider-shape-2,
+  .main-slider-shape-3 {
+    display: none;
+  }
+  .main-slider-shape-1{
+    transform: rotate(2deg) translateY(0px);
+  }
+  .hero-text h1{
+  font-size:1.6rem;
+  font-weight: bolder;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  right: 11%; 
+  transform: translateY(-50%);
+  text-align: right;
+  color: #fff; 
+  max-width: 70%;
+  z-index: 4;
+}
+.icon i{
+font-size: 1.4rem;
+    border-radius: 50%;
+    padding: 8px 12px;
+    color:white;
+    background-color:#0099cc;
+}
+}
+
+@media (max-width: 767px) {
+  .site-url {
+    font-size: 0.875rem; 
+  }
+  .navbar {
+    background-image: linear-gradient(250deg, #145cc7 42% 4%, #fbfbfb 4%);
+  }
+  .navbar-brand img {
+    width: 36vw;
+  }
+}
